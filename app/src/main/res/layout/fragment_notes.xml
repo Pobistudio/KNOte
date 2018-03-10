@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:orientation="vertical">
+
+    <!--<android.support.v7.widget.RecyclerView-->
+        <!--android:id="@+id/rv_list_note"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"/>-->
+
+    <android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        tools:ignore="MissingPrefix"
+        app:cardBackgroundColor="@color/material_white"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="6dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/atv_segment"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:padding="4dp"
+                        android:textAlignment="center"
+                        android:text="s"
+                        android:textSize="18sp"
+                        android:textAllCaps="true"
+                        android:textColor="@color/material_white"
+                        android:background="@drawable/corner_radius_segment_notes"/>
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/atv_title"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.9"
+                        android:padding="4dp"
+                        android:text="Sample Title"
+                        android:textSize="16sp"/>
+
+                </LinearLayout>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/atv_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:textSize="14sp"
+                    android:lines="5"
+                    android:text="Sample Description"
+                    android:ellipsize="end"
+                    fontPath="fonts/Rajdhani-Regular.ttf" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/atv_current_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:textSize="12sp"
+                    android:textAlignment="textEnd"
+                    android:text="26-02-2018"
+                    fontPath="fonts/Rajdhani-SemiBold.ttf"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.4dp"
+                android:paddingBottom="3dp"
+                android:background="@color/md_grey500"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="end"
+                android:weightSum="1">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.2"
+                    android:layout_margin="0.3dp"
+                    android:padding="3dp"
+                    android:tint="@color/material_teal400"
+                    android:src="@drawable/ic_action_view"/>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.2"
+                    android:layout_margin="0.3dp"
+                    android:padding="3dp"
+                    android:tint="@color/material_yellow400"
+                    android:src="@drawable/ic_menu_reminder"/>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.2"
+                    android:layout_margin="0.3dp"
+                    android:padding="3dp"
+                    android:tint="@color/material_red400"
+                    android:src="@drawable/ic_menu_trash"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    </LinearLayout>

@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">KNote</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- Begin Menu Drawer -->
+    <string name="menu_notes">Notes</string>
+    <string name="menu_reminder">Reminder</string>
+    <string name="menu_trash">Trash</string>
+    <!-- End Menu Drawer -->
+
+    <!-- Begin Menu Add Notes -->
+    <string name="add_title">Title...</string>
+    <string name="add_description">Description...</string>
+    <string name="add_setreminder">Set Reminder</string>
+    <string name="add_save">Save</string>
+    <!-- End Menu Add Notes -->
+</resources>
